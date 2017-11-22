@@ -1,0 +1,30 @@
+html {
+  font-family: Helvetica;
+  font-size: 18px;
+}
+
+header {
+  background-image: url("../img/glasses-bg.png");
+  background-repeat: no-repeat;
+  size: cover;
+  width: 100%;
+}
+
+nav {
+  background-color:cadetblue;
+  width: 960px;
+  margin-top: 1rem;
+  color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon img {
+  padding-left: 2rem;
+}
+
+.icon span {
+  padding: 0rem 1rem;
+}
