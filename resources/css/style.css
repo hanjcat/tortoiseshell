@@ -65,14 +65,14 @@ nav {
   padding: 0rem 1rem;
 }
 
-#sitenav {
+#sitenav, #mininav {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: center;
 }
 
-#sitenav span {
+#sitenav span, #mininav span {
   padding-right: 2rem;
 }
 
@@ -166,7 +166,11 @@ footer .logo {
   margin: 4rem;
 }
 
-@media only screen and (max-width: 960px) {
+#mininav {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
   nav, #banner, #info, footer {
     width: 100%;
   }
@@ -184,8 +188,75 @@ footer .logo {
     padding: 1.33rem 4rem;
     font-size: 1.33rem;
   }
-  
+
   nav {
     margin-top: 0rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    min-height: 17rem;
+    background-position: 20%;
+  }
+
+  #sitenav, .logo span {
+    display: none;
+  }
+
+  #mininav {
+    display: block;
+  }
+
+  #banner span, #mission, #mission span, #contact, #contact span {
+    width: 100%;
+  }
+
+  #banner {
+    margin-top: 9rem;
+    margin-right: 0rem;
+  }
+
+  #banner span {
+    padding: 1rem 0rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  main, #products, #info {
+    flex-flow: column nowrap;
+  }
+
+  #products {
+    margin: 3.77rem 0rem 2.23rem 0rem;
+  }
+
+  .card {
+    min-height: 0rem;
+    margin-bottom: 1.54rem;
+  }
+
+  .caption {
+    max-width: 5rem;
+    margin-top: 1rem;
+    flex-flow: row wrap;
+  }
+
+  .caption span {
+    font-size: 0.77rem;
+  }
+
+  #mission {
+    margin-bottom: 4rem;
+  }
+
+  #mission p, #contact p {
+    border: 4px solid white;
+    font-size: 0.77rem;
+  }
+
+  footer .logo {
+    justify-content: center;
+    padding: 0;
   }
 }
