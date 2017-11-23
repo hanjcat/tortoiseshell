@@ -1,18 +1,50 @@
 html {
   font-family: Helvetica;
   font-size: 18px;
+  line-height: 1.2;
+}
+
+div {
+  display: block;
+}
+
+span {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  line-height: 1.2;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
 header {
   background-image: url("../img/glasses-bg.png");
   background-repeat: no-repeat;
-  size: cover;
+  background-size: cover;
+  background-position: center;
   width: 100%;
+  min-height: 31rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: space-between;
 }
 
 nav {
   background-color:cadetblue;
   width: 960px;
+  height: 3rem;
   margin-top: 1rem;
   color: white;
   display: flex;
@@ -21,14 +53,126 @@ nav {
   align-items: center;
 }
 
-.icon img {
+.logo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
   padding-left: 2rem;
 }
 
-.icon span {
+.logo img {
+  height: 1.5rem;
+}
+
+.logo span {
   padding: 0rem 1rem;
 }
 
-nav span {
-  
+#sitenav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#sitenav span {
+  padding-right: 2rem;
+}
+
+#banner {
+  width: 960px;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#banner span {
+  padding: 1.5rem 5rem;
+  background-color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+main {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#products {
+  margin: 3rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  min-width: 11rem;
+  min-height: 8rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#paper {
+  max-width: 3.5rem;
+}
+
+#ruler, #truck {
+  max-width: 5rem;
+}
+
+.caption {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.caption span {
+  text-align: center;
+  padding: .1rem;
+}
+
+#info {
+  max-width: 960px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#mission {
+  width: 35%;
+  margin-right: 5%;
+}
+
+#contact {
+  width: 35%;
+}
+
+#mission span, #contact span {
+  background-color:cadetblue;
+  width: 10rem;
+  padding: 0.5rem 0rem 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+footer {
+  background-color: azure;
+  width: 960px;
+  margin-top: 5rem;
+}
+
+footer .logo {
+  margin: 4rem;
 }
